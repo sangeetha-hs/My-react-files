@@ -1,0 +1,24 @@
+import React, {  useState } from 'react';
+
+
+
+function App() {
+
+  function handleSubmit(e){
+    console.log("hello world")
+  }
+   return <>
+<form onSubmit={handleSubmit}>
+  <label htmlFor="name"> Name</label>
+  <input type="text" id='name' name='name'/>
+  <label htmlFor="age"> age</label>
+  <input type="number" id='age' name='age'/>
+  <button type='submit'>submit</button>
+</form>
+
+
+ </>;
+   
+}
+
+export default App;
